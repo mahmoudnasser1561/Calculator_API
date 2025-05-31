@@ -1,9 +1,9 @@
 from flask import request, jsonify
 from flask_restful import Resource
-from logic.add import add_numbers
+from logic.subtract import subtract_numbers
 from utils.checkPostedData import ValidatePostedData
 
-class Add(Resource):
+class Subtract(Resource):
     def post(self):
         if request.is_json:
             postedData = request.get_json()
@@ -31,11 +31,10 @@ class Add(Resource):
                 "Status Code": 400
             })
 
-        result = add_numbers(x, y)    
+        result = subtract_numbers(x, y)    
 
         return jsonify({
             "Message": result,
             "Status Code": 200
         })
-
-        
+    

@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 from routes.add import Add
+from routes.subtract import Subtract
 
 app = Flask(__name__)
 api = Api(app)
@@ -19,6 +20,7 @@ def home():
     '''
 
 api.add_resource(Add, "/add")
+api.add_resource(Subtract, "/subtract")
 
 if __name__ == "__main__":
     app.run(debug=True)
