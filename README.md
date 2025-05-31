@@ -50,3 +50,24 @@ This project demonstrates:
   http://127.0.0.1:5000/
 
   ```
+
+  ## API Usage
+  #### Add
+  #### POST /add
+  #### Request Body (JSON):
+  ```
+  {
+  "x": 5,
+  "y": 3
+  }
+  
+  ```
+  #### Response
+  ```
+  {
+  "Message": 8,
+  "Status Code": 200
+  }
+  
+  ```
+
