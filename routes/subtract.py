@@ -23,8 +23,8 @@ class Subtract(Resource):
             return jsonify(retJson)
 
         try:
-            x = postedData.get("x")
-            y = postedData.get("y") 
+            x = int(request.args.get("x"))
+            y = int(request.args.get("y"))
         except (KeyError, ValueError, TypeError):
             return jsonify({
                 "Message": "Invalid input. 'x' and 'y' must be numbers.",
