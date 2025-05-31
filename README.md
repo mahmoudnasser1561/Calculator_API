@@ -1,7 +1,7 @@
 # Flask Calculator API
 
 ## OverView
-Flask Calculator API is a simple yet fully functional RESTful API built with Flask that performs basic arithmetic operations: addition, subtraction, multiplication, and division.
+Calculator_API is a simple yet fully functional RESTful API built with Flask that performs basic arithmetic operations: addition, subtraction, multiplication, and division.
 
 It accepts HTTP POST requests with JSON payload or URL query parameters, performs calculations, and returns JSON responses with the results.
 
